@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+   <div class="priority_container">
+       <h1>TO DO LIST</h1>
+       
+       <div class = priority>
+
+        <div class="priority_high">
+            <label for="priHigh">HIGH</label>
+            <ul id="priorityHighList" class="prio-container"></ul>
+        </div>
+
+        <div class="priority_mid">
+            <label for="priMid">MIDDLE</label>
+            <ul id="priorityMidList" class="prio-container"></ul>
+        </div>
+
+        <div class="priority_low">
+            <label for="priLow">LOW</label>
+            <ul id="priorityLowList" class="prio-container"></ul>
+        </div>
+
+       </div>
+
+
+   </div>
+
+   <main class="register_container">
+    <div class = memo>
+
+        <div id="project_box">
+            <label for="pj">プロジェクト名</label>
+            <input type="text" id="pj" placeholder="プロジェクト名を入力">
+        </div>
+    
+        <div id="regidate_box">
+            <label for="regiDate">登録日</label>
+            <input type="date" id="regiDate" name="regiDate">
+        </div>
+    
+        <div id="duedate_box">
+            <label for="dueDate">期限</label>
+            <input type="date" id="dueDate" name="dueDate">
+        </div>
+    
+        <div id="priority_box">
+            <label for="priority">優先度</label>
+                <select id="priority">
+                   <option value="high">High</option>
+                   <option value="middle">Middle</option>
+                   <option value="low">Low</option>
+            </select>
+        </div>
+    
+        <div id="task_box">
+            <label for="taskCon">作業内容</label>
+            <input type="text" id="taskCon" placeholder="できるだけ具体的に入力">
+        </div>
+
+        <div id="file_box">
+            <label for="fileLocation">関連資料</label>
+            <input type="file" id="fileLocation" name="fileLocation">
+        </div>
+    
+        <div id="note_box">
+            <label for="noteCon">備考</label>
+            <input type="text" id="noteCon">
+        </div>
+    
+    <div class="button-container">
+        <button id="save">登録</button>
+    </div>
+
+    </main>
+
+    <ul id="list">
+        <!-- ここに追加データが挿入される -->
+    </ul>
+ 
+
+  
+     
+   
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="main.js"></script>
+</body>
+</html>
